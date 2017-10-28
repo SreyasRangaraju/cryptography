@@ -9,8 +9,7 @@ def ioc(byteList):
     iocCount = [0] * 256
     for b in byteList:
         iocCount[b] += 1
-    # print(iocCount)
-    # print(nthLargest(0, iocCount))
+    print(nthLargest(0, iocCount))
     for i in range(len(iocCount)):
         iocCount[i] **= 2
     return sum(iocCount) / len(byteList) ** 2
@@ -39,4 +38,4 @@ keyLengthMax = 11
 keyLength = 5
 for i in range(1, keyLengthMax):
     vigSep(i, byte)
-# vigSep(keyLength, byte)
+vigSep(keyLength, byte)
